@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.game-container{
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    left: 80px;
+}
+
+.sky{
+    background-color: skyblue;
+    width: 500px;
+    height: 580px;
+    position: absolute;
+}
+
+.ground{
+    background-image: url("bottom-background.png");
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: +1;
+}
+
+.ghost{
+    width: 45px;
+    height: 45px;
+    border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%;
+    border: 3px solid #1c446b;
+    transform: rotate(-45deg);
+    margin-top: 30px;
+    background: white;
+    position: absolute;
+}
+
+.obstacle {
+    background-image: url("flappybird-pipe.png");
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+.topobstacle {
+    background-image: url("flappybird-pipe.png");
+    transform: rotate(180deg);
+    width: 60px;
+    height: 300px;
+    position: absolute;
+}
+
+.borderLeft{
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+}
+
+.borderRight{
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    left: 580px;
+}
+
+.borderTop{
+    width: 660px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top: -50px;
+}
