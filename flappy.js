@@ -22,9 +22,16 @@ document.addEventListener("DOMContentLoaded", ()=>{
             ghost.style.bottom = ghostBottom + "px"
         }
     }
+    
+    function jump1(){
+        if(ghostBottom < 500){
+            ghostBottom += 50
+            ghost.style.bottom = ghostBottom + "px"
+        }
+    }
 
     document.addEventListener("touchstart",jump)
-    document.addEventListener("click",jump)
+    document.addEventListener("click",jump1)
 
     function generateObstacle(){
         let randomHeight = Math.random()*80
