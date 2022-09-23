@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     }
 
-    document.addEventListener("click",jump)
+    document.addEventListener("touchstart",jump)
 
     function generateObstacle(){
         let randomHeight = Math.random()*80
