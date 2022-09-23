@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     function jump(){
         if(ghostBottom < 500){
-            ghostBottom += 50
+            ghostBottom += 25
             ghost.style.bottom = ghostBottom + "px"
         }
     }
