@@ -67,5 +67,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         clearInterval(gameTimerId)
         gameover = true
         document.removeEventListener("click")
+        document.removeEventListener("touchstart")
     }
 })
