@@ -1,6 +1,6 @@
 body{
     display: flex;
-    position: fixed;
+    touch-action: manipulation;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
