@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function gameOver(){
         clearInterval(gameTimerId)
         gameover = true
+        document.location.href="https://maps.app.goo.gl/Cg8drbZbYzUZbEmU7?g_st=iw";
         document.removeEventListener("click")
         document.removeEventListener("touchstart")
     }
